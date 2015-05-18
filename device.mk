@@ -209,12 +209,12 @@ ENABLE_LIBRECOVERY := true
 
 # Enable virtual home button for b2g
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.moz.has_home_button=0
+    ro.moz.has_home_button=0 \
     ro.moz.nfc.enabled=true
 
 PRODUCT_PACKAGES += \
     nfcd
 
 PRODUCT_COPY_FILES += \
-    device/sony/aries/qpnp_pon.kl:system/usr/keylayout/qpnp_pon.kl \
-    device/sony/aries/volume.cfg:system/etc/volume.cfg
+    device/sony/shinano/qpnp_pon.kl:system/usr/keylayout/qpnp_pon.kl \
+    device/sony/shinano/volume.cfg:system/etc/volume.cfg
