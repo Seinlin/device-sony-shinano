@@ -204,8 +204,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Platform specific default properties
 #
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    persist.sys.usb.config=mtp \
-    persist.data.qmi.adb_logmask=0
+    persist.sys.usb.config=mass_storage \
+    persist.data.qmi.adb_logmask=0 \
+    ro.adb.secure=0
 
 # for Gecko to support bluedroid stack
 PRODUCT_PACKAGES += \
@@ -222,5 +223,5 @@ PRODUCT_PACKAGES += \
     nfcd
 
 PRODUCT_COPY_FILES += \
-    device/sony/aries/qpnp_pon.kl:system/usr/keylayout/qpnp_pon.kl \
-    device/sony/aries/volume.cfg:system/etc/volume.cfg
+    device/sony/shinano/qpnp_pon.kl:system/usr/keylayout/qpnp_pon.kl \
+    device/sony/shinano/volume.cfg:system/etc/volume.cfg
