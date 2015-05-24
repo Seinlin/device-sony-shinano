@@ -396,14 +396,17 @@ COMMON_BINS="
 copy_files "$COMMON_BINS" "system/bin" ""
 
 # All the files can be built from device/sony/*
-# COMMON_HW="
 # 	camera.qcom.so
 # 	gps.default.so
 # 	keystore.qcom.so
 # 	lights.default.so
 # 	libdisplay.default.so
-# 	"
-# copy_files "$COMMON_HW" "system/lib/hw" "hw"
+COMMON_HW="
+  nfc_nci.pn54x.msm8974.so
+  "
+copy_files "$COMMON_HW" "system/lib/hw" "hw"
+
+# All the files can be built from device/sony/*
 # 
 # COMMON_ETC="
 #   ad_calib.cfg
