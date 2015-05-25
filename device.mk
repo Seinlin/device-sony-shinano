@@ -206,3 +206,21 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.sys.usb.config=mtp \
     persist.data.qmi.adb_logmask=0
+
+# for Gecko to support bluedroid stack
+PRODUCT_PACKAGES += \
+    bluetooth.default
+
+ENABLE_LIBRECOVERY := true
+
+# Enable virtual home button for b2g
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.moz.has_home_button=0
+    ro.moz.nfc.enabled=true
+
+PRODUCT_PACKAGES += \
+    nfcd
+
+PRODUCT_COPY_FILES += \
+    device/sony/aries/qpnp_pon.kl:system/usr/keylayout/qpnp_pon.kl \
+    device/sony/aries/volume.cfg:system/etc/volume.cfg
