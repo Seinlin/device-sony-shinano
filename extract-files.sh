@@ -33,6 +33,7 @@ if [[ ! -d ${ANDROIDFS_DIR}/system/etc/firmware/modem.mdt ]]; then
     adb root &&
     sleep 1 &&
     adb wait-for-device &&
+    adb pull /system/vendor/lib/libbt-vendor.so ${ANDROIDFS_DIR}/system/vendor/lib/libbt-vendor.so &&
     adb pull /system/etc/firmware ${ANDROIDFS_DIR}/system/etc/firmware
 fi
 
