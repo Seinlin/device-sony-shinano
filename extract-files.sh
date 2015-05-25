@@ -57,7 +57,7 @@ PROPRIETARY_DEVICE_DIR=../../../$DEVICE_BLOBS_DIR/proprietary
 
 mkdir -p $PROPRIETARY_DEVICE_DIR
 
-for NAME in etc/firmware
+for NAME in etc/firmware vendor/lib
 do
     mkdir -p $PROPRIETARY_DEVICE_DIR/$NAME
 done
@@ -178,4 +178,9 @@ COMMON_FIRMWARE="
 	modem.mdt
 	"
 copy_files "$COMMON_FIRMWARE" "system/etc/firmware" "etc/firmware"
+
+COMMON_LIBS="
+  libbt-vendor.so
+  "
+copy_files "$COMMON_LIBS" "system/vendor/lib" "vendor/lib"
 

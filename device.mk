@@ -216,7 +216,7 @@ ENABLE_LIBRECOVERY := true
 
 # Enable virtual home button for b2g
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.moz.has_home_button=0
+    ro.moz.has_home_button=0 \
     ro.moz.nfc.enabled=true
 
 PRODUCT_PACKAGES += \
