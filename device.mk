@@ -199,7 +199,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Platform specific default properties
 #
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    persist.sys.usb.config=mass_storage \
+    persist.sys.usb.config=mtp \
     ro.adb.secure=0 \
 
 # for Gecko to support bluedroid stack
