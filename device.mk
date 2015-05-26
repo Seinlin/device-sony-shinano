@@ -220,7 +220,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.moz.nfc.enabled=true
 
 PRODUCT_PACKAGES += \
-    nfcd
+    nfcd \
+    init.sh
 
 PRODUCT_COPY_FILES += \
     device/sony/shinano/qpnp_pon.kl:system/usr/keylayout/qpnp_pon.kl \

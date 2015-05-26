@@ -40,9 +40,9 @@ fi
 echo Pulling files from ${ANDROIDFS_DIR}
 
 # Always true, before there is a reference base image.
-DEVICE_BUILD_ID=23.0.1.A.5.77
+DEVICE_BUILD_ID=23.1.A.1.28
 
-if [[ "${DEVICE_BUILD_ID}" != "23.0.1.A.5.77" ]]; then
+if [[ "${DEVICE_BUILD_ID}" != "23.1.A.1.28" ]]; then
     echo Invalid system backup - Wrong base version found: ${DEVICE_BUILD_ID}.
     echo
     echo Do this:
