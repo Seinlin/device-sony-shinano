@@ -179,9 +179,3 @@ COMMON_FIRMWARE="
 	modem.mdt
 	"
 copy_files "$COMMON_FIRMWARE" "system/etc/firmware" "etc/firmware"
-
-COMMON_LIBS="
-  libbt-vendor.so
-  "
-copy_files "$COMMON_LIBS" "system/vendor/lib" "vendor/lib"
-
